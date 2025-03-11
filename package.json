@@ -1,0 +1,29 @@
+{
+  "name": "whatsapp-chatgpt-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^11.3.0",
+    "mammoth": "^1.9.0",
+    "openai": "^4.84.0",
+    "pdf-parse": "^1.1.1",
+    "pdfjs-dist": "^4.10.38",
+    "qrcode": "^1.5.4",
+    "whatsapp-web.js": "^1.26.0",
+    "winston": "^3.17.0"
+  },
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "@types/pdfjs-dist": "^2.10.377"
+  }
+}
