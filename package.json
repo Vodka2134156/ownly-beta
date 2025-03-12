@@ -2,9 +2,9 @@
   "name": "whatsapp-chatgpt-bot",
   "version": "1.0.0",
   "type": "module",
-  "main": "index.js",
+  "main": "index.cjs",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.cjs"
   },
   "author": "",
   "license": "MIT",
