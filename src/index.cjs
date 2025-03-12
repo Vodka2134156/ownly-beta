@@ -221,9 +221,11 @@ async function loadCache() {
     return await generateAIResponse(userQuery);
   }
   
+  
   const client = new Client({
     authStrategy: new LocalAuth(),
-    puppeteer: { args: ["--no-sandbox"] },
+    puppeteer: { args: [ '--no-sandbox',
+      '--disable-setuid-sandbox'] },
   });
   
   client.on("qr", async (qr) => {
