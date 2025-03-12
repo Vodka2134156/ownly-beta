@@ -1,4 +1,4 @@
-export let faqData = [
+ let faqData = [
     {
         question: "Potential Tenancy Statuses - What they mean and how they work",
         response: "Understand the various tenancy statuses used in Eagle's Leasing module. Read more at: https://eaglesoftware.help/en/articles/5044424-potential-tenancy-statuses-what-they-mean-and-how-they-work",
@@ -1751,7 +1751,7 @@ export let faqData = [
   
 
 ];
-export const UsefulClauseData = [{
+ const UsefulClauseData = [{
     question: "What is the clause for 'Sale of the Purchaser’s Property'?",
     response: "A1: This agreement is conditional upon the purchaser obtaining an unconditional agreement for the sale of the purchaser’s property situated at [ADDRESS], for [$......] or such lesser amount as the purchaser accepts on terms and conditions acceptable to the purchaser by [DATE]. This condition is inserted for the sole benefit of the purchaser.\n\nNote: Care must be taken to ensure that any agreement entered into by the purchaser takes into account the standard time limits in this agreement. The normal cut-off time for satisfying conditions is 5.00pm (see clauses 1.1(32) and 1.2(2) of the General Terms of Sale. If in doubt specific legal advice should be obtained).",
     embedding: null
@@ -2167,7 +2167,7 @@ export const UsefulClauseData = [{
     embedding: null
   }
 ]
-export const faqCodeData = [
+ const faqCodeData = [
     {
       question: "What is the title of the document establishing professional conduct for real estate agents?",
       response: "The document is titled 'Real Estate Agents Act (Professional Conduct and Client Care) Rules 2012'. It sets out the rules made by the Real Estate Agents Authority to establish minimum standards for professional conduct and client care that all licensed agents, branch managers, and salespersons must meet. This framework is crucial for maintaining industry integrity and client trust. For further details, refer to the full document [here](https://drive.google.com/file/d/1iy1DFfS67onURZ6ip3XW4dbzyBrhwku2/view?usp=drive_link).",
@@ -2751,3 +2751,4 @@ Agents must upload the agreement so Accounts can confirm terms and deposit requi
     
   
  
+    module.exports = { faqCodeData,faqData, UsefulClauseData};
