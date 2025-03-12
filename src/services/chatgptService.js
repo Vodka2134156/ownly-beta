@@ -1,7 +1,5 @@
-const { OpenAI } =require( "openai");
-const {dotenv} =require( "dotenv");
-
-dotenv.config();
+const { OpenAI } = require("openai");
+require("dotenv").config(); // Load environment variables
 
 const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY, // Ensure this is set in .env
@@ -15,7 +13,7 @@ const ASSISTANT_ID = process.env.ASSISTANT_ID || "asst_I0ujlEMUG35b6rqGKkDAZmDv"
  * @param {string} [threadId] - (Optional) The conversation thread ID.
  * @returns {Promise<string>} - The assistant's response.
  */
-export async function askChatGPT(message, threadId) {
+async function askChatGPT(message, threadId) {
     try {
         // If no thread exists, create one
         if (!threadId) {
@@ -56,3 +54,6 @@ export async function askChatGPT(message, threadId) {
         return "I'm having trouble processing your request.";
     }
 }
+
+// ✅ Export function for CommonJS
+module.exports = { askChatGPT };
