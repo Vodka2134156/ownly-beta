@@ -11,7 +11,7 @@ let {UsefulClauseData,faqData,faqCodeData}= require("./faqdata")
 let embeddingCache = {};
 
 // Load OpenAI API key from .env
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+const OPENAI_API_KEY = "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";
 // Define FAQ data (example FAQ for brochures; you can add more as needed)
 
 
