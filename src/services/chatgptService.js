@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY, // Ensure this is set in .env
+    apiKey: "k-proj-1jmbu7nTxQHj5sEiC9s8hVNv2pJ0Rceu4So-DXGa4jy1GmTrrVbgu8SvXWFsDeAzvaGncjHQ3GT3BlbkFJf13Wa3RS_BNdi1-dmRwtJBX9gYyuZ04uUYEQXft3rg0Qht7foduYr1X7_fhY4oLyUS6IJf7KEA", // Ensure this is set in .env
 });
 
 const ASSISTANT_ID = process.env.ASSISTANT_ID || "asst_I0ujlEMUG35b6rqGKkDAZmDv";
